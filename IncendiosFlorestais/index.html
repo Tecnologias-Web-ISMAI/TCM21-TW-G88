@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    
+
+<head>
+    <script  src="JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+   
+
+    <title>Incendios Florestais</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+
+<body>   
+
+<!-- O video -->
+
+<video  autoplay muted loop id="myVideo"> 
+    <source src="VideoVideo.mp4" type="video/mp4">
+  </video> 
+
+
+<div id=top class=contentBarra>
+  <div class="topnav">
+    <div></div>
+    <a id="logotipo" href="index.html"> <img class="content3"  src="logomarca.png" alt="logotipo"> </a>
+    <a class="active" href="#home"> Incêndios Florestais</a>
+    <a href="HTML_Causas.html">Causas</a>
+    <a href="HTML_Consequencias.html">Consequências</a>
+    <a href="HTML_Prevencao.html">Prevenção</a>
+   
+  </div>
+  <div class="topnav2">
+    
+    
+
+      <!-- O Botao vermelho de play e pause - JavaScrip -->
+  
+  <button  id="myBtn" onclick="myFunction()"><img src="playPause.png" alt="play/pause"> </button>
+  <script  src="JavaScript.js"></script>
+   </div>
+</div>
+
+<hr > 
+<hr>
+ 
+<div class="content1">
+  
+
+   <div class="popup" onclick="myFunction2()">A “Nova Era” de incêndios é definida pelo comportamento extremo do fogo. Trata-se de uma nova geração de incêndios intensos, impossíveis de controlar e de propagação rápida, com projeções a longas distâncias e mudanças imprevisíveis na direção das chamas. 
+    Além das consequências ecológicas, estes incêndios extremos têm profundos impactes socioeconómicos, podendo envolver perdas de vidas humanas e danos irreversíveis nos ecossistemas. 
+  <p></p>
+    <span class="popuptext" id="myPopup"> <a id="textoPOP" href="https://florestas.pt/saiba-mais/uma-nova-era-de-incendios-o-que-significa-esta-expressao/"  >F L O R E S T A S . P T</a> </span>
+  </div>
+
+  
+  <hr>  <hr>
+    
+
+  <h1 > <strong>CIFP</strong></h1>
+    <h2 > <strong>Combate a Incêndios Florestais em Portugal</strong></h2>
+    </div>
+
+      
+      
+      <!-- Botao abrir Janela donativos -->
+      <button  id="myBtn100" >Ajudar / Donativo</button>
+
+     
+      
+      <!-- A janela -->
+      <div id="myModal" class="modal">
+      
+        <!-- Conteúdo janela -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Ao fazer um donativo está a tornar Portugal um país mais verde.</h3>
+          
+          <div id="botaoPP">
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="business" value="donativos@cifp.pt">
+                <ul>
+                <li>
+                  <label for="name" >Pagamento:</label>
+                  <input class="forminputPP" type="image" name="submit" src="paypal-logo.png" alt="Donate">
+
+                </li>
+              </ul>
+            </form>
+          </div>
+<hr>
+          <p id="mensagemQuestao">Se tiver alguma questão, envie-nos uma mensagem:</p>
+
+            <form action="formdata/" method="post">
+              <ul>
+                
+                <li>
+                  <label for="name" >Nome:</label>
+                  <input class="form input" type="text" id="name" name="user_name" placeholder="O seu nome" required>
+            
+                </li>
+                <li>	
+                  <label for="mail">E-mail:</label>
+                  <input class="form input" type="email" id="mail" name="user_mail" placeholder="O seu endereço de email" required>
+                  <span class="hint">"endereco@mail.com"</span>
+                </li>
+                <li>
+                  <label for="msg">Mensagem:</label>
+                  <textarea id="msg" name="user_message" placeholder="Escreva aqui a sua mensagem" required  cols="40" rows="6" ></textarea>
+                </li>
+                
+                <li class="botaoEnviar">
+                  <!-- <input type="submit"> para enviar mensagem --> 
+                  <button class="submit" name="submit" type="submit">Enviar</button>
+                </li>
+              </ul>
+            
+            </form>
+            <hr>
+                <div class="logos"> 
+                <a href="http://www.prociv.pt/pt-pt/Paginas/default.aspx"  ><img id="PC2" src="logoProtecaoCivil.jpg" alt="imagem"></a>
+                <img class="espaço" src="quadrado.png" alt="imagem">
+                <a href="https://rea.apambiente.pt/content/inc%C3%AAndios-rurais"  ><img  id="REA" src="logoREA.png" alt="imagem"></a>
+                <img class="espaço" src="quadrado.png" alt="imagem">
+                <a href="https://www.portugal.gov.pt/pt/gc21/comunicacao/tema?i=78"  ><img id="RP" src="republica-portuguesa-vector-logo-small.jpg" alt="imagem"></a>
+                <img class="espaço" src="quadrado.png" alt="imagem">
+                <a href="https://www.gnr.pt/atrib_SPENA.aspx"  ><img id="GNR" src="logognr.jpg" alt="imagem"></a>
+                <img class="espaço" src="quadrado.png" alt="imagem">
+              </div> 
+              <p >A quantia será revertida para efeitos de Prevenção dos Incêndios, mediada pelas entidades competentes. A floresta cresce, nós agradecemos.</p>
+            
+          </div>
+        </div>
+      
+      
+
+      
+      
+
+
+      
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn100");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+
+
+   <hr>
+
+
+    <div class="content">
+      <h3> <strong>A Missão </strong></h3>
+
+    <div class=texto > <p> Os incêndios florestais são dos eventos mais catastróficos em Portugal.  
+        Com a capacidade de alcançar e destruir milhares de hectares de floresta, os incêndios afetam a flora e a fauna, resultando na morte de milhões de organismos. Destabilizam o ecossistema, poluem o ar e impedem a sua renovação. Quando arrastados para zonas agrícolas, habitacionais ou vias de circulação, devastam terrenos, casas e tiram inúmeras vidas. Com estes eventos a ocorrer por todo o mundo, resulta ainda um prejuízo climático global. </p>
+   <p>Apesar de serem muitas vezes originados através da ação humana, os incêndios florestais são considerados Catástrofes Naturais. Esta designação prende-se essencialmente à ocorrência da catástrofe num ambiente “natural”, nas consequências que são visíveis ao nível do terreno florestal e nos fatores naturais que afetam grandemente a propagação do fogo. </p>
+  
+  <p>O CIFP propôe-se, por ser de caráter essencial, a sensibilizar a população para a devastadora ação desta Catástrofe, informar acerca dos incêndios florestais, as suas causas, consequências e sobre as formas de defesa a empregar. Procure ter um papel ativo no combate a Incêndios Florestais, começando por descobrir:</p>
+</div>
+
+
+
+<ol class=v-effect-link>
+<li> <a href="HTML_Causas.html">Causas</a></li>
+<li><a href="HTML_Consequencias.html">Consequências</a></li>
+<li><a href="HTML_Prevencao.html">Prevenção</a></li>
+</ol>
+
+
+
+
+    
+  </div>
+
+
+
+
+
+
+<hr >
+<hr >
+<hr >
+<hr >
+
+
+
+
+
+
+
+  <div class="content3">
+    <h2 id="titulo2">Incêndios Florestais em Portugal</h2>
+
+    
+
+            <div style="overflow-x: auto;" > 
+         <table  class="estiloTabela" >
+           <caption id="caption1">Apenas alguns dos incêndios ocorridos em Portugal nas últimas décadas.</caption>
+          
+           <tr>
+           <th class="td" > 2005</th>
+           <th class="td" > 2013</th>
+           <th class="td" > 2016</th>
+           <th class="td" > 2017</th>
+           <th class="td" > 2018</th>
+           <th class="td" > 2020</th>
+           <th class="td" > 2021</th>
+           </tr>
+          
+           <tr>
+           <td class="td" ><a href="https://www.youtube.com/watch?v=SQgTnZFDfY8">Seia</a> </td>
+           <td class="td"><a href="https://www.youtube.com/watch?v=WOyLSJaOjEw">Viseu</a>  </td>
+           <td class="td"><a href="https://www.youtube.com/watch?v=x1_2m2jQzvk"> Madeira</a>  </td>
+           <td class="td"><a href="https://www.youtube.com/watch?v=g_Mk7K4qkVE">Pedrógão Grande</a>  </td>
+           <td class="td"><a href="https://www.youtube.com/watch?v=5IDjmFVy6c4">Monchique</a>  </td>
+           <td class="td"><a href="https://www.youtube.com/watch?v=Aopthatsvxs">Oleiros</a>  </td>
+           <td class="td"><a href="https://www.youtube.com/watch?v=jNSjsrlDXkc">Castro Marim</a>  </td> 
+          </tr>
+
+          <tr>
+          <td class="td"></td>
+           <td class="td"> </td>
+           <td class="td"> </td>
+           <td class="td"><a href="https://www.youtube.com/watch?v=laP58FnQNmo">Oliveira do Hospital</a></td>
+           <td class="td"> </td>
+           <td class="td"> </td>
+           <td class="td"> </td>
+          </tr>
+           
+          </table> </div>
+
+<p> <a href="XML_XSD_incendios/incendios.xml"> XML</a> / <a href="XML_XSD_incendios/incendios.xsd">Schema</a>  </p>
+
+          <hr > 
+          <hr >
+
+
+          <div class="video-grid">
+            <div class="video-item">
+              <div class="video-wrap">
+                <iframe src="Reportagem3.mp4"  width="640" height="360"  allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="video-item">
+              <div class="video-wrap">
+                <iframe src="Reportagem2.mp4" width="640" height="360"   allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="video-item">
+              <div class="video-wrap">
+                <iframe src="Reportagem1.mp4" width="640" height="360"   allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <p>  </p>
+       
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" style="background-color: red;"/>
+
+
+
+
+
+        
+          <hr >
+          <hr >
+          <div></div>
+          <hr >
+          <hr >
+          <hr >
+          <hr >
+            
+          <footer>
+            <table id=tabelaFooter  >
+              
+             
+              <tr id="subtitulosTabelaFooter">
+              <th > Contactos CIFP</th>
+              <th > Entidades reconhecidas</th>
+              <td></td>
+              </tr>
+             
+              <tr>
+              <td ><a class="links" href="mailto:someone@example.com">Email: contacto@cifp.pt</a> </td>
+              <td ><a class="links" href="https://www.gnr.pt/atrib_SPENA.aspx"  >GNR</a></td>
+              <td ><a class="links" href="https://rea.apambiente.pt/content/inc%C3%AAndios-rurais"  >Portal do Estado do Ambiente</a></td>
+             </tr>
+   
+             <tr>
+             <td >Telefone: *** *** *** </td>
+              <td > <a class="links" href="http://www.prociv.pt/pt-pt/Paginas/default.aspx"  >Proteção Civil</a></td>
+              <td ><a class="links" href="https://www.portugal.gov.pt/pt/gc21/comunicacao/tema?i=78"  >República Portuguesa</a></td>
+              
+             </tr>
+
+             <tr>
+              <td >Rua das Amoras, 678</td>
+                <td></td>
+                <td></td>
+              </tr>
+              
+             </table>
+
+          </footer>
+         
+          </div>
+          
+            
+            <div class="footer">
+              <div class="logos">
+                <p>
+                  <button onclick="scrollToTop()" class="scroll-to-top">
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+                </p>
+                
+              <a href="http://www.prociv.pt/pt-pt/Paginas/default.aspx"  ><img id="PC" src="logoProtecaoCivil.jpg" alt="imagem"></a>
+              <img class="espaço" src="quadrado.png" alt="imagem">
+              <a href="https://rea.apambiente.pt/content/inc%C3%AAndios-rurais"  ><img  id="REA2" src="logoREA.png" alt="imagem"></a>
+              <img class="espaço" src="quadrado.png" alt="imagem">
+              <a href="https://www.portugal.gov.pt/pt/gc21/comunicacao/tema?i=78"  ><img id="RP2" src="republica-portuguesa-vector-logo-small.jpg" alt="imagem"></a>
+              <img class="espaço" src="quadrado.png" alt="imagem">
+              <a href="https://www.gnr.pt/atrib_SPENA.aspx"  ><img id="GNR2" src="logognr.jpg" alt="imagem"></a>
+              <img class="espaço" src="quadrado.png" alt="image">
+            </div> 
+            </div>
+           
+        
+
+            
+           
+     
+</body> 
+</html>

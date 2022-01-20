@@ -1,0 +1,34 @@
+Dia 1.
+-elaboração da interface do site. (Header, Colunas, Footer, Logo, Divisórias e Âncoras).
+
+Dia 2.
+-criação de páginas secundárias ("Causas"(HTML_Causas.html), "Prevenções"(HTML_Prevenções.html), "Consequencias"(HTML_Consequencias.html)), e seus respetivos hyperlinks na página principal. -progresso significativo da mesma (imagens e formatação de texto) e criação de uma tabela na página Principal (HTML_Incendios).
+
+Dia 3. 
+-criação do diagrama.
+-add background.
+-pequenos ajustes na página.
+-criação da página do produto.
+-adição de informação em todas as páginas.
+-adição de cabeçalho em todas as páginas estáticas.
+
+Dia 4.
+-finalização do diagrama.
+-adição de informação em todas as páginas.
+-criação de botões scroll e pause/play.
+-adição de informação na página Causas (HTML_Causas.html).
+-recolha de imagens e detalhes dos produtos e aplicação dos mesmos nos respetivos locais.
+
+Dia 5.
+-finalização da página "Incendios" (HTML_Incendios).
+-finalização da página "Prevenções" (HTML_Prevenções.html) com a adição de um formulário.
+-adição de diferentes publicidades na coluna esquerda em todas as páginas.
+-adição de uma janela pop-up para donativos, com recurso a java Script.
+-formatação de texto.
+
+Dia 6.
+-tentativa de corrigir media queries.
+-carregamento do ficheiro XML com recurso a java na página "Quem Somos" (about.html).
+-validação do xml com o devido schema.
+-organização do repositório do github.
+-finalização do site.
